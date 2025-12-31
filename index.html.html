@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy New Year</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: radial-gradient(circle at top, #1b3a4b, #0b132b);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Floating Moon */
+.moon {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background: #fff3c4;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #fff3c4;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+/* Sparkles */
+.sparkle {
+    position: absolute;
+    font-size: 14px;
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+
+/* Card */
+.card {
+    max-width: 90%;
+    width: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px 25px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #ffd369;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.message {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.dua-arabic {
+    font-size: 1.3em;
+    line-height: 2;
+    margin: 20px 0;
+    color: #9fffe0;
+}
+
+.dua-translation {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #f1f1f1;
+}
+
+.signature {
+    margin-top: 25px;
+    font-size: 1em;
+    color: #ffd369;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: #ddd;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    h1 { font-size: 1.9em; }
+    .dua-arabic { font-size: 1.1em; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="moon"></div>
+
+<!-- Sparkles -->
+<div class="sparkle" style="top:12%; left:18%;">✨</div>
+<div class="sparkle" style="top:28%; left:78%;">✨</div>
+<div class="sparkle" style="top:70%; left:12%;">✨</div>
+<div class="sparkle" style="top:85%; left:60%;">✨</div>
+
+<div class="card">
+    <h1>Happy New Year</h1>
+    <h2>To My Dear Friends</h2>
+
+    <div class="message">
+        As we step into a new year, may Allah fill your lives with light,
+        peace, and countless blessings.
+    </div>
+
+    <div class="dua-arabic">
+        اللَّهُمَّ اجْعَلْ هٰذَا الْعَامَ عَامَ خَيْرٍ وَرَحْمَةٍ  
+        وَاغْفِرْ لَنَا وَوَفِّقْنَا لِمَا تُحِبُّ وَتَرْضَى
+    </div>
+
+    <div class="dua-translation">
+        <strong>O Allah,</strong><br>
+        Make this new year a year of goodness and mercy.<br>
+        Forgive us and guide us to what You love and are pleased with.
+    </div>
+
+    <div class="signature">
+        — Ahmad Javed
+    </div>
+
+    <div class="footer">
+        🌙 May Allah keep you under His protection 🤍
+    </div>
+</div>
+
+</body>
+</html>
